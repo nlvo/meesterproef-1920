@@ -1,145 +1,64 @@
-# Meesterproef @cmda-minor-web 1920
+# Meddy
+Meddy is een applicatie waarmee je meer informatie kunt verkrijgen over je medicijn met behulp van Optical Character Recognition (OCR).
 
-In de Meesterproef ga je toepassen wat je in de Minor Web Development hebt geleerd.
-Voor de Meesterproef krijg je een opdracht van een echte opdrachtgever.
-Je gaat leren hoe je de geleerde kennis en skills kan gebruiken om een oplossing voor een probleem te ontwerpen. Testen, maken, evalueren, testen, maken ...
+## 🎨 Web Design
 
-<!-- Je kan kiezen uit verschillende projecten. Hier ga je 5 weken aan werken.  Voor de Meesterproef geef je met een eerste, tweede keuze en derde keuze aan welk project je graag wil doen. Daarna wordt door de coaches een indeling gemaakt. -->
+### ❓ Wat
 
+Leren hoe je (design) principles kan toepassen in een ontwerp
 
-## Planning
+- Student kan uitleggen wat de Exclusive Design Principles zijn.
+- Student laat zien hoe de Exclusive Design Principles zijn toegepast in het ontwerp.
+- Readme: In de beschrijving van het project staat de opdracht uitgelegd, is het probleem duidelijk beschreven en hoe het probleem is opgelost.
 
-| Planning | Maandag | Dinsdag | Woensdag | Donderdag | Vrijdag |
-|---|---|---|---|---|---|
-| <a href=#meesterproef---week-0>Week 0</a> | Projecten kiezen |   |   |   |   |
-| <a href=#meesterproef---week-1>Week 1</a> | Briefing opdrachtgever | [Debriefing](Debriefing.md) |   | <del>Hemelvaart</del> | <del>Hemelvaart</del> |
-| <a href=#meesterproef---week-2>Week 2</a> | Sprint 1 + standup & checkup |   | Codereviews | Designreviews | Sprint 2 + Meesterproef Q&A |
-| <a href=#meesterproef---week-3>Week 3</a> | <del>Pinksteren</del> |   | Codereviews | Designreviews | Sprint 3 |
-| <a href=#meesterproef---week-4>Week 4</a> | Standup & checkup |   | Codereviews | Designreviews | Sprint 4 |
-| <a href=#meesterproef---week-5>Week 5</a> | Standup & checkup |   |  | Final prototype  | EXPO |
+### 💡 Hoe
 
+Aan de hand van feedback die worden gegeven vanuit de opdrachtgever, maar ook van klasgenoten en docenten. Zullen we de applicatie verbeteren.
 
+### 💭 Waarom
 
-## Werkwijze
+Het is belangrijk om te ontwerpen voor *gebruikers* en op die manier te achterhalen wat nou werkt en wat niet.
 
-In de eerste week krijg je een briefing van de opdrachtgever en schrijf je een [debriefing](Debriefing.md).
-Dat is de opdracht en de doelstellingen in eigen woorden beschreven.
-Daarna ga je iedere week een proof-of-concept bespreken met je opdrachtgever.
-In week 5 presenteer je het eindresultaat.
-Hiervoor maak je een passende presentatie.
+## 🚀 Real time web
 
-Elke week zijn er coachingsmomenten gepland.
-Coaches voor de Meesterproef zijn: Joost Faber, Laurens Aarnoudse, Janno Kapritsias, Vasilis van Gemert en Koop Reynders.
+### ❓ Wat
 
-1. Maandag - Standup & checkup met je coach.
-2. Woensdag - Codereview met Joost, Laurens en Janno.
-3. Donderdag - Designreview met Vasilis en Koop.
-4. Vrijdag - Testen met de opdrachtgever.
+- Data management
 
+    De server houdt een datamodel bij en elke client wordt de juiste data doorgestuurd
 
-## Programma
+### 💡 Hoe
 
-### Meesterproef - Week 0 (11 mei)
-Deze week worden de projecten gepresenteerd en kun je een project kiezen.
+- Sessions cookies
 
+    Door tijdelijk bij te houden welke medicijnen een gebruiker heeft gescand. Daarnaast willen we ook kijken of we de afbeelding tijdelijk kunnen opslaan. 
 
-- [Presentatie slides](https://docs.google.com/presentation/d/1cMSx0X2GEiu5WfBdRT2i9Jly3MxVHs0V-USg9hH4p2M/edit?usp=sharing)  
-- [Planning](https://docs.google.com/spreadsheets/d/1Oy8f5TSDYUA_qSwfTtYQTGjkNMUM0wAZDqDPHqgRpi4/edit?usp=sharing)
+### 💭 Waarom
 
+Het bijhouden van het gebruik van medicijnen is vrij gevoelig informatie en dit wil ik dan het liefst ook niet opslaan. Dit gaat ook over de afbeeldingen die gebruikers maken.
 
+## 🧩 Web App from Scratch
 
-### Meesterproef - Week 1 (18 - 22 mei)
-Deze week heb je je eerste afspraak met je opdrachtgever.
-Schrijf een [debriefing](Debriefing.md) van de opdracht en check deze met de opdrachtgever en je coach.
+### ❓ Wat
 
-1. Maandag is de eerste afspraak met de opdrachtgever en heb je een standup en checkup met je coach.
-2. Dinsdag stuur je een debriefing.
-3. Donderdag en vrijdag is het Hemelvaart. Geen les.
+**Data ophalen, manipuleren en tonen**
 
+Je kan data ophalen, manipuleren en dynamisch omzetten naar html elementen mbv templating.
 
+Je begrijpt hoe je middels asynchrone code met een externe API kan werken.
 
+- JSON data kan met een asynchrone request worden opgehaald uit een API
+- JSON data kan, minimaal met de methodes; map, filter en reduce worden gemanipuleerd
 
-### Meesterproef - Week 2 (25 - 29 mei )
-Deze week ga je twee keer testen bij de opdrachtgever.
-Maandag en vrijdag ga je de opdrachtgever laten zien wat je hebt gemaakt.
+### 💡 Hoe
 
-1. Maandag heb je een standup en checkup met je coach.
-2. Woensdag is de eerste codereviews.
-3. Donderdag is er een designreview.
-4. Vrijdag is er een Q&A over de verwachtingen, criteria, leerdoelen en beoordeling
+Voor dit project hebben we toegang tot een medicijn data API, hier maken wij dan ook gebruik van om de juiste medicijn te vinden van een gebruiker.
 
+Dus er is nagedacht over hoe we de informatie het beste kunnen ophalen, dus door middel van lokaal de dataset beschikbaar stellen of door het binnen te halen wanneer we het nodig hebben. Of een keer ophalen door middel van een fetch en het gebruiken.
 
+### 💭 Waarom
 
-
-### Meesterproef - Week 3 (1 - 5 juni)
-De derde week ga je weer testen bij de opdrachtgever. Aan het eind van de week laat je de 3e sprint zien.
-
-
-1. Maandag is het tweede pinksterdag. Geen les. Wanneer ga je de 3e sprint laten zien aan je klant?
-2. Woensdag is er een codereview.
-3. Donderdag is er een designreview.
-
-
-
-### Meesterproef - Week 4 (8 - 12 juni)
-Deze week ga je weer testen bij de opdrachtgever. Aan het eind van de week laat je de 4e sprint zien.
-
-1. Maandag heb je een standup en checkup met je coach.
-2. Woensdag is er een codereview.
-3. Donderdag is er een designreview.
-
-
-
-### Meesterproef - Week 5 (15 - 19 juni)
-Dit is de laatste week van de Meesterproef. Donderdag laat je de je het final prototype zien aan je opdrachtgever. Vrijdag is de EXPO, dan kun je je werk laten zien aan collega's en wordt je werk beoordeeld.
-
-1. Maandag heb je een standup en checkup met je coach.
-2. Donderdag final prototype bij de opdrachtgever.
-3. Vrijdag EXPO. Presentatie en beoordeling van de projecten.
-
-
-
-
-
-## Criteria en beoordeling
-
-Met de Meesterproef laat je zien wat je hebt geleerd tijdens de minor.
-Studenten die de vakken hebben gehaald kunnen aan de Meesterproef beginnen.
-
-De Meesterproef bestaat uit 3 projectweken en een eindproject van 5 weken.
-De 3 projectweken,
-[PW1](https://github.com/cmda-minor-web/project-1-1920),
-[PW2](https://github.com/cmda-minor-web/project-2-1920) en
-[PW3](https://github.com/cmda-minor-web/project-3-1920) tellen mee als AVV.
-
-Het eindproject wordt beoordeeld op een Design rationale, een Product biografie en een reflectie op het eigen niveau.
-Én of de klant blij is met het gemaakte project.
-
-### Design rationale
-In de Design rationale schrijf je de [debriefing](Debriefing.md), de probleem-definitie, toon je de oplossing en schrijf je een uitleg van de code.
-De Design rationale is een verantwoording van je ontwerp.
-
-### Product biografie
-In de meesterproef doorloop je een iteratief proces.
-Elke week bespreek je met je opdrachtgever je vorderingen en ideeën.
-In de Product biografie hou je stap voor stap bij wat je allemaal hebt gedaan.
-Je schrijft over het proces, de werkwijze en de planning.
-Ook schetsen, testen, uitprobeersels en inspiratie zijn deel van de Product biografie.
-
-### Reflectie op eigen niveau
-Wekelijks reflecteer je systematisch op je werk.
-In een aantal gesprekken _reviewen_ we de code en het design van je project.
-Dit doen we op basis van de rubrics van de verschillende vakken.
-Zo krijg je een goed beeld van je eigen niveau, mogelijke aandachtspunten in techniek, interactie en/of aspecten van het design-proces waar je je nog op kan verbeteren.
-
-### Een blije klant
-Voor de klant werk je aan een bestaand product of maak je een (werkend) prototype. Gericht op een bepaalde gebruikersgroep, geschikt voor verschillende apparaten, met echte data, én een goede UX. (Jeweettoch)
-Een blije klant is een goede klant.
-Soms ontkom je er niet aan dat je een beetje eigenwijs moet doen.
-Dan doe je juist niet wat de klant wil en probeer je de opdrachtgever te overtuigen met een proof-of-concept.
-En soms kan het voorkomen dat het proces niet helemaal soepel loopt.
-Dat hoort erbij en daar leer je van.
-Aan het eind van het project vragen we de klant feedback op het geleverde werk en het proces.
+De hoeveelheid data die beschikbaar is gesteld door de API is vrij veel, dit kan ervoor zorgen dat de applicatie die wij bouwen wat langzamer kan worden ervaren door gebruikers.
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
